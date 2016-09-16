@@ -1,4 +1,6 @@
-
+int dots1;
+int dots2;
+int dots3;
 Die jen;
 void setup()
 {
@@ -18,7 +20,7 @@ void draw()
 		jen.show();
 		jen.roll();
 		}
-
+	textSize(20);
 	
 
 	}
@@ -52,17 +54,20 @@ class Die //models one single dice cube
 		if( hello== 0)
 		{
 			ellipse(myX+20, myY+20, 10, 10);
+			
 		}
 		else if(hello==1)
 		{
 			ellipse(myX+10, myY+10, 10, 10);
 			ellipse(myX+30, myY+30, 10, 10);
+			
 		}
 		else if(hello==2)
 		{
 			ellipse(myX+10, myY+10, 10, 10);
 			ellipse(myX+30, myY+30, 10, 10);
 			ellipse(myX+20, myY+20, 10, 10);
+			
 		}
 		else if(hello==3)
  		{
@@ -70,6 +75,7 @@ class Die //models one single dice cube
 			ellipse(myX+30, myY+30, 10, 10);
 			ellipse(myX+10, myY+30, 10, 10);
 			ellipse(myX+30, myY+10, 10, 10);
+			
  		}
  		else if(hello==4)
  		{
@@ -78,6 +84,7 @@ class Die //models one single dice cube
 			ellipse(myX+10, myY+30, 10, 10);
 			ellipse(myX+30, myY+10, 10, 10);
 			ellipse(myX+20, myY+20, 10, 10);
+			
  		}
  		else 
  		{
@@ -87,6 +94,7 @@ class Die //models one single dice cube
 			ellipse(myX+30, myY+10, 10, 10);
 			ellipse(myX+10, myY+20, 10, 10);
 			ellipse(myX+30, myY+20, 10, 10);
+			
  		}
 
 	}
