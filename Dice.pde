@@ -11,9 +11,9 @@ void setup()
 
 void draw()
 {
-  background(0);
+  background(250, 200, 120);
   sum =0;
-  for(int x = 50; x <=310; x+=50)
+  for(int x = 55; x <=315; x+=50)
   {
     for (int y = 50; y<= 300; y+=50)
     {
@@ -24,7 +24,7 @@ void draw()
   }
    
   textSize(28);
-  text("Your Lucky Number is" + sum + "!", 15, 370);
+  text("Your Lucky Number is " + sum + "!", 15, 370);
     
 }
 void mousePressed()
@@ -48,7 +48,7 @@ class Die //models one single dice cube
   }
   void show()
   {
-    fill(200, 70, 80);
+    fill(237, 70, 80);
     rect(myX, myY, 40, 40);
     
     noStroke();
@@ -56,47 +56,47 @@ class Die //models one single dice cube
     
     if( hello== 0)
     {
-      ellipse(myX+20, myY+20, 10, 10);
+      ellipse(myX+20, myY+20, 9, 9);
       sum = sum +1;
     }
     else if(hello==1)
     {
-      ellipse(myX+10, myY+10, 10, 10);
-      ellipse(myX+30, myY+30, 10, 10);
+      ellipse(myX+9, myY+9, 9, 9);
+      ellipse(myX+30, myY+30, 9, 9);
      sum = sum +2;
     }
     else if(hello==2)
     {
-      ellipse(myX+10, myY+10, 10, 10);
-      ellipse(myX+30, myY+30, 10, 10);
-      ellipse(myX+20, myY+20, 10, 10);
+      ellipse(myX+9, myY+9, 9, 9);
+      ellipse(myX+30, myY+30, 9, 9);
+      ellipse(myX+20, myY+20, 9, 9);
       sum = sum + 3;
     }
     else if(hello==3)
      {
-      ellipse(myX+10, myY+10, 10, 10);
-      ellipse(myX+30, myY+30, 10, 10);
-      ellipse(myX+10, myY+30, 10, 10);
-      ellipse(myX+30, myY+10, 10, 10);
+      ellipse(myX+9, myY+9, 9, 9);
+      ellipse(myX+30, myY+30, 9, 9);
+      ellipse(myX+9, myY+30, 9, 9);
+      ellipse(myX+30, myY+9, 9, 9);
       sum = sum +4;
      }
      else if(hello==4)
      {
-      ellipse(myX+10, myY+10, 10, 10);
-      ellipse(myX+30, myY+30, 10, 10);
-      ellipse(myX+10, myY+30, 10, 10);
-      ellipse(myX+30, myY+10, 10, 10);
-      ellipse(myX+20, myY+20, 10, 10);
+      ellipse(myX+9, myY+9, 9, 9);
+      ellipse(myX+30, myY+30, 9, 9);
+      ellipse(myX+9, myY+30, 9, 9);
+      ellipse(myX+30, myY+9, 9, 9);
+      ellipse(myX+20, myY+20, 9, 9);
       sum = sum + 5;
      }
      else 
      {
-       ellipse(myX+10, myY+10, 10, 10);
-      ellipse(myX+30, myY+30, 10, 10);
-      ellipse(myX+10, myY+30, 10, 10);
-      ellipse(myX+30, myY+10, 10, 10);
-      ellipse(myX+10, myY+20, 10, 10);
-      ellipse(myX+30, myY+20, 10, 10);
+       ellipse(myX+9, myY+9, 9, 9);
+      ellipse(myX+30, myY+30, 9, 9);
+      ellipse(myX+9, myY+30, 9, 9);
+      ellipse(myX+30, myY+9, 9, 9);
+      ellipse(myX+9, myY+20, 9, 9);
+      ellipse(myX+30, myY+20, 9, 9);
       sum = sum +6;
      }
 
